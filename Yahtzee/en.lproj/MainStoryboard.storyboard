@@ -132,7 +132,7 @@
                                     <action selector="gameClicked:" destination="2" eventType="touchUpInside" id="Vis-nU-dCa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx0-D5-IcC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx0-D5-IcC">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="UXA-pY-34M"/>
                                     <constraint firstAttribute="width" constant="45" id="q7G-fc-cAU"/>
@@ -146,8 +146,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score1sClicked:" destination="2" eventType="touchUpInside" id="5i7-VY-K6U"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI7-b8-6Gh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI7-b8-6Gh">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="POJ-l0-7xB"/>
                                 </constraints>
@@ -160,8 +163,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score2sClicked:" destination="2" eventType="touchUpInside" id="CYE-Nq-lC4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKX-pm-ixn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKX-pm-ixn">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="yGj-uF-bp6"/>
                                 </constraints>
@@ -174,8 +180,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score3sClicked:" destination="2" eventType="touchUpInside" id="SU0-Z7-WE7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-3M-Nsd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-3M-Nsd">
                                 <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="15"/>
                                 <color key="tintColor" red="0.72959183670000005" green="0.48165391860000001" blue="0.2846599433" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="5's :">
@@ -185,8 +194,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score5sClicked:" destination="2" eventType="touchUpInside" id="2Mh-Yq-tab"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMa-4O-NJW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMa-4O-NJW">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="e8g-zp-pAL"/>
                                 </constraints>
@@ -199,8 +211,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score4sClicked:" destination="2" eventType="touchUpInside" id="7Sc-eo-uEy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUh-4x-AW8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUh-4x-AW8">
                                 <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="15"/>
                                 <color key="tintColor" red="0.72959183670000005" green="0.48165391860000001" blue="0.2846599433" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="6's :">
@@ -210,8 +225,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score6sClicked:" destination="2" eventType="touchUpInside" id="SiG-oN-lig"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xi-GQ-BFE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xi-GQ-BFE">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="63b-FX-yJT"/>
                                 </constraints>
@@ -223,8 +241,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score3OfKClicked:" destination="2" eventType="touchUpInside" id="dMW-Ef-KWc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6N-LX-caN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6N-LX-caN">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="YXo-Q9-cuk"/>
                                 </constraints>
@@ -236,8 +257,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="score4OfKClicked:" destination="2" eventType="touchUpInside" id="CKu-0U-C39"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxG-h2-iRI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxG-h2-iRI">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="SbC-hi-TDx"/>
                                 </constraints>
@@ -249,8 +273,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="scoreFullHClicked:" destination="2" eventType="touchUpInside" id="qq4-cc-AM8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btx-0u-TPa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btx-0u-TPa">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="PBL-S7-WPe"/>
                                 </constraints>
@@ -262,8 +289,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="scoreSmStrClicked:" destination="2" eventType="touchUpInside" id="WTh-EF-rER"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMh-sp-FCa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMh-sp-FCa">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="3wW-Cd-P1L"/>
                                 </constraints>
@@ -275,8 +305,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="scoreYahtzeeClicked:" destination="2" eventType="touchUpInside" id="0l2-Qg-2fT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8a-N2-FYU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8a-N2-FYU">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="mj1-EV-UnU"/>
                                 </constraints>
@@ -288,8 +321,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="scoreChanceClicked:" destination="2" eventType="touchUpInside" id="lAN-eX-Yee"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0C-9s-fmk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0C-9s-fmk">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="HPz-GN-Ugy"/>
                                 </constraints>
@@ -301,6 +337,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="scoreLgStrClicked:" destination="2" eventType="touchUpInside" id="lYF-f5-C2y"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bonus : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-E6-5Oq">
                                 <constraints>
@@ -794,19 +833,24 @@
                         <outlet property="dice4Btn" destination="PRP-sj-dtL" id="FO2-bs-LdT"/>
                         <outlet property="dice5Btn" destination="dMe-NH-M3o" id="EF2-IB-Exz"/>
                         <outlet property="gameBtn" destination="Vdx-Rm-0ra" id="bMV-AW-btY"/>
-                        <outlet property="l3okBtn" destination="2xi-GQ-BFE" id="MF9-Ma-fTA"/>
-                        <outlet property="l4okBtn" destination="u6N-LX-caN" id="jan-3P-XBR"/>
-                        <outlet property="lcBtn" destination="e8a-N2-FYU" id="TYB-tF-u1i"/>
-                        <outlet property="lfhBtn" destination="TxG-h2-iRI" id="k7v-zM-xQG"/>
-                        <outlet property="llsBtn" destination="o0C-9s-fmk" id="aKC-CD-vI2"/>
-                        <outlet property="lssBtn" destination="Btx-0u-TPa" id="HbI-xR-XYA"/>
-                        <outlet property="lyBtn" destination="hMh-sp-FCa" id="QbM-wB-IgU"/>
-                        <outlet property="s1sBtn" destination="Jx0-D5-IcC" id="wr7-sn-pQw"/>
-                        <outlet property="s2sBtn" destination="bI7-b8-6Gh" id="Bpx-MO-YgP"/>
-                        <outlet property="s3sBtn" destination="vKX-pm-ixn" id="kU1-v7-fHG"/>
-                        <outlet property="s4sBtn" destination="EMa-4O-NJW" id="JzW-jy-Tlg"/>
-                        <outlet property="s5sBtn" destination="tEk-3M-Nsd" id="qp5-sw-NzP"/>
-                        <outlet property="s6sBtn" destination="tUh-4x-AW8" id="nQ7-oP-XKV"/>
+                        <outlet property="h1sLbl" destination="2fS-s1-dfc" id="m9b-Pa-bp2"/>
+                        <outlet property="h2sLbl" destination="3hu-ro-Dce" id="CNQ-bd-Nkg"/>
+                        <outlet property="h3OfKLbl" destination="Xv0-H1-sUF" id="zxF-Xh-Mu8"/>
+                        <outlet property="h3sLbl" destination="dsu-cs-CUK" id="hqD-Rh-umc"/>
+                        <outlet property="h4OfKLbl" destination="baJ-UX-3xp" id="dag-OJ-RDO"/>
+                        <outlet property="h4sLbl" destination="TFb-ZG-MO0" id="LdI-Pv-063"/>
+                        <outlet property="h5sLbl" destination="q3D-Hc-PKm" id="fL8-Fo-f4h"/>
+                        <outlet property="h6sLbl" destination="BGz-kL-B7e" id="f1N-BT-OmU"/>
+                        <outlet property="hBonusLbl" destination="cp4-OM-o5R" id="7CP-R8-5iT"/>
+                        <outlet property="hChanceLbl" destination="gWG-JU-xwe" id="TSc-zS-g5m"/>
+                        <outlet property="hFullHLbl" destination="621-eB-84L" id="VdT-Ou-4HS"/>
+                        <outlet property="hLTotalLbl" destination="Wej-z4-pmH" id="C9l-im-fEa"/>
+                        <outlet property="hLgStrLbl" destination="PXH-BA-wzN" id="5qf-1L-TS8"/>
+                        <outlet property="hSmStrLbl" destination="h43-ad-A0D" id="CKE-Jz-fch"/>
+                        <outlet property="hTotalLbl" destination="fww-Sd-LZN" id="bV0-ev-FQf"/>
+                        <outlet property="hUTotalLbl" destination="cXP-hd-U7L" id="X1T-fW-pzD"/>
+                        <outlet property="hYahtzeeLbl" destination="KVO-VE-Y45" id="A1J-Fy-oaA"/>
+                        <outlet property="rollBtn" destination="LUa-71-q9R" id="t0U-0b-ISJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -837,6 +881,19 @@
                 <relationship kind="action" name="dice5Clicked:" candidateClass="UIButton"/>
                 <relationship kind="action" name="gameClicked:" candidateClass="UIButton"/>
                 <relationship kind="action" name="rollClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score1sClicked:"/>
+                <relationship kind="action" name="score2sClicked:"/>
+                <relationship kind="action" name="score3OfKClicked:"/>
+                <relationship kind="action" name="score3sClicked:"/>
+                <relationship kind="action" name="score4OfKClicked:"/>
+                <relationship kind="action" name="score4sClicked:"/>
+                <relationship kind="action" name="score5sClicked:"/>
+                <relationship kind="action" name="score6sClicked:"/>
+                <relationship kind="action" name="scoreChanceClicked:"/>
+                <relationship kind="action" name="scoreFullHClicked:"/>
+                <relationship kind="action" name="scoreLgStrClicked:"/>
+                <relationship kind="action" name="scoreSmStrClicked:"/>
+                <relationship kind="action" name="scoreYahtzeeClicked:"/>
                 <relationship kind="outlet" name="botSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="dice1Btn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dice2Btn" candidateClass="UIButton"/>
@@ -844,19 +901,23 @@
                 <relationship kind="outlet" name="dice4Btn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dice5Btn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="gameBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="l3okBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="l4okBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="lcBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="lfhBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="llsBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="lssBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="lyBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="s1sBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="s2sBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="s3sBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="s4sBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="s5sBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="s6sBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="h1sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h2sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h3OfKLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h3sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h4OfKLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h4sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h5sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h6sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hBonusLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hChanceLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hFullHLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hLTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hLgStrLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hSmStrLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hUTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hYahtzeeLbl" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

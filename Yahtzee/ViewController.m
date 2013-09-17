@@ -8,25 +8,14 @@
 
 #import "ViewController.h"
 #import "Dice.h"
+#import "Score.h"
 #import "Yahtzee.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *gameBtn;
 @property (weak, nonatomic) IBOutlet UISwitch *botSwitch;
-@property (weak, nonatomic) IBOutlet UIButton *s1sBtn;
-@property (weak, nonatomic) IBOutlet UIButton *s2sBtn;
-@property (weak, nonatomic) IBOutlet UIButton *s3sBtn;
-@property (weak, nonatomic) IBOutlet UIButton *s4sBtn;
-@property (weak, nonatomic) IBOutlet UIButton *s5sBtn;
-@property (weak, nonatomic) IBOutlet UIButton *s6sBtn;
-@property (weak, nonatomic) IBOutlet UIButton *l3okBtn;
-@property (weak, nonatomic) IBOutlet UIButton *l4okBtn;
-@property (weak, nonatomic) IBOutlet UIButton *lfhBtn;
-@property (weak, nonatomic) IBOutlet UIButton *lssBtn;
-@property (weak, nonatomic) IBOutlet UIButton *llsBtn;
-@property (weak, nonatomic) IBOutlet UIButton *lyBtn;
-@property (weak, nonatomic) IBOutlet UIButton *lcBtn;
+@property (weak, nonatomic) IBOutlet UIButton *rollBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *dice1Btn;
 @property (weak, nonatomic) IBOutlet UIButton *dice2Btn;
@@ -34,10 +23,27 @@
 @property (weak, nonatomic) IBOutlet UIButton *dice4Btn;
 @property (weak, nonatomic) IBOutlet UIButton *dice5Btn;
 
+@property (weak, nonatomic) IBOutlet UILabel *h1sLbl;
+@property (weak, nonatomic) IBOutlet UILabel *h2sLbl;
+@property (weak, nonatomic) IBOutlet UILabel *h3sLbl;
+@property (weak, nonatomic) IBOutlet UILabel *h4sLbl;
+@property (weak, nonatomic) IBOutlet UILabel *h5sLbl;
+@property (weak, nonatomic) IBOutlet UILabel *h6sLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hBonusLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hUTotalLbl;
+@property (weak, nonatomic) IBOutlet UILabel *h3OfKLbl;
+@property (weak, nonatomic) IBOutlet UILabel *h4OfKLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hFullHLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hSmStrLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hLgStrLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hYahtzeeLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hChanceLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hLTotalLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hTotalLbl;
+
+
 @property (nonatomic) Yahtzee *yahtzee;
-
-- (void) toggleDice: (int) number button: (UIButton*) button;
-
+@property (nonatomic) Score *score;
 @end
 
 @implementation ViewController
@@ -78,116 +84,128 @@
     return YES;
 }
 
-- (void) toggleDice: (int) number button: (UIButton*) button {
-    UIImage* image = Nil;
+- (void) diceClicked: (int) number {
     Dice* dice = [self.yahtzee getDice: number];
-    if(dice.fixed){
-        image = [UIImage imageNamed: [NSString stringWithFormat:
-                                      @"Spots%i.png", number]];
-        dice.fixed = NO;
-    }else{
-        image = [UIImage imageNamed: [NSString stringWithFormat:
-                                      @"Spots%i_Fixed.png", number]];
-        dice.fixed = YES;
-    }
-    [button setImage:image forState:UIControlStateNormal];
+    if(dice.fixed) dice.fixed = NO;
+    else dice.fixed = YES;
+    [self setDiceFace: number];
 }
 
-
 - (IBAction) dice1Clicked:(UIButton*)sender {
-//    [self toggleDice:1 button: self.dice1Btn];
-    Dice* dice = [self.yahtzee getDice: 1];
-    if(dice.fixed){
-        UIImage * normImg = [UIImage imageNamed:@"Spots01.png"];
-        [self.dice1Btn setImage:normImg forState:UIControlStateNormal];
-        dice.fixed = NO;
-    }else{
-        UIImage * fixedImg = [UIImage imageNamed:@"Spots01_Fixed.png"];
-        [self.dice1Btn setImage:fixedImg forState:UIControlStateNormal];
-        dice.fixed = YES;
-    }
+    [self diceClicked: 1];
 }
 
 - (IBAction)dice2Clicked:(UIButton*)sender {
-    Dice* dice = [self.yahtzee getDice: 2];
-    if(dice.fixed){
-        UIImage * fixedImg = [UIImage imageNamed:@"Spots02.png"];
-        [self.dice2Btn setImage:fixedImg forState:UIControlStateNormal];
-        dice.fixed = NO;
-    }else{
-        UIImage * normImg = [UIImage imageNamed:@"Spots02_Fixed.png"];
-        [self.dice2Btn setImage:normImg forState:UIControlStateNormal];
-        dice.fixed = YES;
-    }
+    [self diceClicked: 2];
 }
 
 - (IBAction)dice3Clicked:(UIButton*)sender {
-    Dice* dice = [self.yahtzee getDice: 3];
-    if(dice.fixed){
-        UIImage * fixedImg = [UIImage imageNamed:@"Spots03.png"];
-        [self.dice3Btn setImage:fixedImg forState:UIControlStateNormal];
-        dice.fixed = NO;
-    }else{
-        UIImage * normImg = [UIImage imageNamed:@"Spots03_Fixed.png"];
-        [self.dice3Btn setImage:normImg forState:UIControlStateNormal];
-        dice.fixed = YES;
-    }
+    [self diceClicked: 3];
 }
 
 - (IBAction)dice4Clicked:(UIButton*)sender {
-    Dice* dice = [self.yahtzee getDice: 4];
-    if(dice.fixed){
-        UIImage * fixedImg = [UIImage imageNamed:@"Spots04.png"];
-        [self.dice4Btn setImage:fixedImg forState:UIControlStateNormal];
-        dice.fixed = NO;
-    }else{
-        UIImage * normImg = [UIImage imageNamed:@"Spots04_Fixed.png"];
-        [self.dice4Btn setImage:normImg forState:UIControlStateNormal];
-        dice.fixed = YES;
-    }
+    [self diceClicked: 4];
 }
 
 - (IBAction)dice5Clicked:(UIButton*)sender {
-    Dice* dice = [self.yahtzee getDice: 5];
+    [self diceClicked: 5];
+}
+
+- (void) setDiceFace: (int) number {
+    Dice *dice = [self.yahtzee getDice: number];
+    NSString *imgName = Nil;
     if(dice.fixed){
-        UIImage * fixedImg = [UIImage imageNamed:@"Spots05.png"];
-        [self.dice5Btn setImage:fixedImg forState:UIControlStateNormal];
-        dice.fixed = NO;
+        imgName = [NSString stringWithFormat:@"Spots0%i_Fixed.png", dice.face];
     }else{
-        UIImage * normImg = [UIImage imageNamed:@"Spots05_Fixed.png"];
-        [self.dice5Btn setImage:normImg forState:UIControlStateNormal];
-        dice.fixed = YES;
+        imgName = [NSString stringWithFormat:@"Spots0%i.png", dice.face];
     }
+    
+    UIImage * image = [UIImage imageNamed:imgName];
+    UIButton *diceBtn = Nil;
+    if(number == 1) diceBtn = self.dice1Btn;
+    else if(number == 2) diceBtn = self.dice2Btn;
+    else if(number == 3) diceBtn = self.dice3Btn;
+    else if(number == 4) diceBtn = self.dice4Btn;
+    else diceBtn = self.dice5Btn;
+    
+    [diceBtn setImage:image forState:UIControlStateNormal];
+}
+
+- (IBAction)score1sClicked:(id)sender {
+    [self.yahtzee saveScore: S_One];
+    self.rollBtn.enabled = YES;
+    [self.rollBtn setTitle:@"Roll" forState:UIControlStateNormal];
+}
+- (IBAction)score2sClicked:(id)sender {
+    [self.yahtzee saveScore: S_Two];
+}
+- (IBAction)score3sClicked:(id)sender {
+    [self.yahtzee saveScore: S_Three];
+}
+- (IBAction)score4sClicked:(id)sender {
+    [self.yahtzee saveScore: S_Four];
+}
+- (IBAction)score5sClicked:(id)sender {
+    [self.yahtzee saveScore: S_Five];
+}
+- (IBAction)score6sClicked:(id)sender {
+    [self.yahtzee saveScore: S_Six];
+}
+- (IBAction)score3OfKClicked:(id)sender {
+    [self.yahtzee saveScore: S_ThreeOfAKind];
+}
+- (IBAction)score4OfKClicked:(id)sender {
+    [self.yahtzee saveScore: S_FourOfAKind];
+}
+- (IBAction)scoreFullHClicked:(id)sender {
+    [self.yahtzee saveScore: S_FullHouse];
+}
+- (IBAction)scoreSmStrClicked:(id)sender {
+    [self.yahtzee saveScore: S_SmallStraight];
+}
+- (IBAction)scoreLgStrClicked:(id)sender {
+    [self.yahtzee saveScore: S_LargeStraight];
+}
+- (IBAction)scoreYahtzeeClicked:(id)sender {
+    [self.yahtzee saveScore: S_Yahtzee];
+}
+- (IBAction)scoreChanceClicked:(id)sender {
+    [self.yahtzee saveScore: S_Chance];
 }
 
 - (IBAction)rollClicked:(UIButton*)sender {
+    [self.rollBtn setTitle:@"Re-Roll" forState:UIControlStateNormal];
+    self.score = [self.yahtzee rollDices];
+    if(self.yahtzee.chances==0){
+        sender.enabled = NO;
+    }
+    [self setDiceFace: 1];
+    [self setDiceFace: 2];
+    [self setDiceFace: 3];
+    [self setDiceFace: 4];
+    [self setDiceFace: 5];
+    self.h1sLbl.text = [NSString stringWithFormat:@"%i", self.score.ones];
+    self.h2sLbl.text = [NSString stringWithFormat:@"%i", self.score.twoes];
+    self.h3sLbl.text = [NSString stringWithFormat:@"%i", self.score.threes];
+    self.h4sLbl.text = [NSString stringWithFormat:@"%i", self.score.fours];
+    self.h5sLbl.text = [NSString stringWithFormat:@"%i", self.score.fives];
+    self.h6sLbl.text = [NSString stringWithFormat:@"%i", self.score.sixes];
+    self.h3OfKLbl.text = [NSString stringWithFormat:@"%i", self.score.threeOfAKind];
+    self.h4OfKLbl.text = [NSString stringWithFormat:@"%i", self.score.fourOfAKind];
+    self.hFullHLbl.text = [NSString stringWithFormat:@"%i", self.score.fullHouse];
+    self.hSmStrLbl.text = [NSString stringWithFormat:@"%i", self.score.smallStraight];
+    self.hLgStrLbl.text = [NSString stringWithFormat:@"%i", self.score.largeStraight];
+    self.hYahtzeeLbl.text = [NSString stringWithFormat:@"%i", self.score.yahtzee];
+    self.hChanceLbl.text = [NSString stringWithFormat:@"%i", self.score.chance];
     
-}
-
-- (void) setGameButtonsEnabled: (BOOL) enabled {
-    [self.s1sBtn setEnabled:enabled];
-    [self.s2sBtn setEnabled:enabled];
-    [self.s3sBtn setEnabled:enabled];
-    [self.s4sBtn setEnabled:enabled];
-    [self.s5sBtn setEnabled:enabled];
-    [self.s6sBtn setEnabled:enabled];
-    [self.l3okBtn setEnabled:enabled];
-    [self.l4okBtn setEnabled:enabled];
-    [self.lfhBtn setEnabled:enabled];
-    [self.llsBtn setEnabled:enabled];
-    [self.llsBtn setEnabled:enabled];
-    [self.lyBtn setEnabled:enabled];
-    [self.lcBtn setEnabled:enabled];
 }
 
 - (IBAction)gameClicked:(UIButton*)sender {
     if([sender.titleLabel.text isEqual: @"Start"]){
         [self.botSwitch setEnabled:NO];
-        [self setGameButtonsEnabled:YES];
         [sender setTitle:@"Restart" forState:UIControlStateNormal];
     }else{
         [self.botSwitch setEnabled:YES];
-        [self setGameButtonsEnabled:NO];
         [sender setTitle:@"Start" forState:UIControlStateNormal];
     }
 }

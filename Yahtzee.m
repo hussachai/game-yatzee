@@ -9,14 +9,24 @@
 #import "Yahtzee.h"
 #import "Dice.h"
 #import "Score.h"
+@interface Yahtzee()
+
+@property (nonatomic) int chances;
+@property (nonatomic) int turn;
+@property (nonatomic) Score *score;
+
+@end
 
 @implementation Yahtzee
+
 
 const int MAX_CHANCES = 3;
 
 - (id) init {
+    
     self = [super init];
-    self.chances = 0;
+    self.bot = YES;
+    self.chances = MAX_CHANCES;
     self.dices = [NSArray arrayWithObjects:
                  [[[Dice alloc] init] initFace:1],
                  [[[Dice alloc] init] initFace:2],
@@ -26,8 +36,22 @@ const int MAX_CHANCES = 3;
     self.scores = [NSArray arrayWithObjects:
                    [[Score alloc] init],
                    [[Score alloc] init], nil];
+    
+    self.turn = 0;
     self.score = [[Score alloc] init];
     return self;
+}
+
+- (int) chances {
+    return _chances;
+}
+
+- (int) getTurn {
+    return self.turn;
+}
+
+- (Score*) getPlayerScore {
+    return [self.scores objectAtIndex:self.turn];
 }
 
 - (Dice*) getDice: (int) number {
@@ -35,7 +59,54 @@ const int MAX_CHANCES = 3;
     return [self.dices objectAtIndex: number-1 ];
 }
 
-- (void) rollDices {
+- (void) saveScore:(ScoreType) type {
+    
+    Score* playerScore = [self.scores objectAtIndex: self.turn];
+    if(type == S_One){
+        playerScore.ones = self.score.ones;
+    }else if(type == S_Two){
+        playerScore.twoes = self.score.twoes;
+    }else if(type == S_Three){
+        playerScore.threes = self.score.threes;
+    }else if(type == S_Four){
+        playerScore.fours = self.score.fours;
+    }else if(type == S_Five){
+        playerScore.fives = self.score.fives;
+    }else if(type == S_Six){
+        playerScore.sixes = self.score.sixes;
+    }else if(type == S_ThreeOfAKind){
+        playerScore.threeOfAKind = self.score.threeOfAKind;
+    }else if(type == S_FourOfAKind){
+        playerScore.fourOfAKind = self.score.fourOfAKind;
+    }else if(type == S_FullHouse){
+        playerScore.fullHouse = self.score.fullHouse;
+    }else if(type == S_SmallStraight){
+        playerScore.smallStraight = self.score.smallStraight;
+    }else if(type == S_LargeStraight){
+        playerScore.largeStraight = self.score.largeStraight;
+    }else if(type == S_Yahtzee){
+        playerScore.yahtzee = self.score.yahtzee;
+    }else if(type == S_Chance){
+        playerScore.chance = self.score.chance;
+    }
+    
+    if(self.bot){
+        //next player
+        self.turn++;
+        if(self.turn > ([self.scores count]-1) ){
+            self.turn = 0;
+        }
+    }
+    
+    self.chances = MAX_CHANCES;
+}
+
+
+- (Score*) rollDices {
+    
+    if(self.chances == 0){
+        return self.score;
+    }
     
     self.chances--;
     
@@ -44,6 +115,8 @@ const int MAX_CHANCES = 3;
     }
     
     Score *score = self.score;
+    [score clear];
+    
     int n1 = 0;
     int n2 = 0;
     int n3 = 0;
@@ -141,6 +214,8 @@ const int MAX_CHANCES = 3;
        n4 == 5 || n5 == 5 || n6 == 5){
         score.yahtzee = 50;
     }
+    
+    return score;
 }
 
 @end
