@@ -18,4 +18,6 @@
 
 - (Dice*) initFace: (int) face;
 
+- (void) clear;
+
 @end

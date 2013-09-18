@@ -21,4 +21,9 @@
     return self;
 }
 
+- (void) clear {
+    self.face = 0;
+    self.fixed = NO;
+}
+
 @end
