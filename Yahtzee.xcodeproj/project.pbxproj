@@ -119,7 +119,6 @@
 		0993A9FF17DD0E760050C230 = {
 			isa = PBXGroup;
 			children = (
-				09A1632A17EAC49B00AB5190 /* AVFoundation.framework */,
 				0993AA1117DD0E760050C230 /* Yahtzee */,
 				0993AA0A17DD0E760050C230 /* Frameworks */,
 				0993AA0917DD0E760050C230 /* Products */,
@@ -137,6 +136,7 @@
 		0993AA0A17DD0E760050C230 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09A1632A17EAC49B00AB5190 /* AVFoundation.framework */,
 				0993AA0B17DD0E760050C230 /* UIKit.framework */,
 				0993AA0D17DD0E760050C230 /* Foundation.framework */,
 				0993AA0F17DD0E760050C230 /* CoreGraphics.framework */,
