@@ -43,6 +43,20 @@ const int TOTAL_DICES = 5;
     return self;
 }
 
+- (BOOL) isGameOver {
+    if(self.bot){
+        for(Score *score in self.scores){
+            if(![score isDone]){
+                return NO;
+            }
+        }
+        return YES;
+    }else{
+        Score *hScore = [self.scores objectAtIndex:0];
+        return [hScore isDone];
+    }
+}
+
 - (int) chances {
     return _chances;
 }
@@ -63,9 +77,11 @@ const int TOTAL_DICES = 5;
 - (void) saveScore:(ScoreType) type {
     
     Score* playerScore = [self.scores objectAtIndex: self.turn];
-    [playerScore setScore:type value:
-     [self.score getScore:type]];
+    int points = [self.score getPoints:type];
+    [playerScore setPoints:type value: points];
     [playerScore mark:type];
+    
+    NSLog(@"Saving score: %i of type: %i for %i", points, type, self.turn);
     int uppers = playerScore.ones + playerScore.twoes + playerScore.threes +
         playerScore.fours + playerScore.fives + playerScore.sixes;
     if(uppers >= 63){
@@ -75,7 +91,10 @@ const int TOTAL_DICES = 5;
         //next player
         self.turn++;
         if(self.turn > ([self.scores count]-1) ){
+            NSLog(@"User's turn");
             self.turn = 0;
+        }else{
+            NSLog(@"Bot's turn");
         }
     }
     
@@ -200,7 +219,7 @@ const int TOTAL_DICES = 5;
 }
 
 - (void) clear {
-    self.bot = NO;
+    
     self.chances = MAX_CHANCES;
     for(Dice* dice in self.dices){
         [dice clear];

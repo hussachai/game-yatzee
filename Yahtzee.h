@@ -23,6 +23,8 @@ extern const int TOTAL_DICES;
 //The 0 index score is human
 @property (nonatomic) NSArray *scores;
 
+- (BOOL) isGameOver;
+
 - (int) chances;
 
 - (int) getTurn;

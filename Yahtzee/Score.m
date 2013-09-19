@@ -42,7 +42,7 @@ const int SCORE_TYPES = 13;
     return true;
 }
 
-- (void) setScore: (ScoreType) type value: (int) value{
+- (void) setPoints: (ScoreType) type value: (int) value{
     if(type == S_One) self.ones = value;
     else if(type == S_Two) self.twoes = value;
     else if(type == S_Three) self.threes = value;
@@ -58,7 +58,7 @@ const int SCORE_TYPES = 13;
     else if(type == S_Chance) self.chance = value;
 }
 
-- (int) getScore: (ScoreType) type {
+- (int) getPoints: (ScoreType) type {
     if(type == S_One) return self.ones;
     else if(type == S_Two) return self.twoes;
     else if(type == S_Three) return self.threes;

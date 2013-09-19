@@ -40,9 +40,9 @@ typedef enum {
 
 - (BOOL) isMarked: (ScoreType) type;
 
-- (void) setScore: (ScoreType) type value: (int) value;
+- (void) setPoints: (ScoreType) type value: (int) value;
 
-- (int) getScore: (ScoreType) type;
+- (int) getPoints: (ScoreType) type;
 
 - (int) getUpperTotal;
 

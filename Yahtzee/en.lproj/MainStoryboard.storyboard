@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Sandy Wall Texture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g6H-Pm-Vsl" userLabel="Background"/>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnN-Z8-gw4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Roll them!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnN-Z8-gw4">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="1JI-Rq-47f"/>
                                     <constraint firstAttribute="width" constant="100" id="BfA-jh-ZFW"/>
@@ -43,9 +43,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BBB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFi-GM-Yh2">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="bNh-cf-jjc"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="20"/>
                                 <color key="textColor" red="0.1433718604" green="0.47456904890000001" blue="0.94389748090000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -125,6 +122,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-Rm-0ra">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="TRe-Na-5qT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,7 +140,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx0-D5-IcC">
                                 <color key="backgroundColor" red="0.72959183670000005" green="0.48165391860000001" blue="0.2846599433" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="3VD-sK-9uX"/>
                                     <constraint firstAttribute="width" constant="45" id="q7G-fc-cAU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
@@ -470,9 +469,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HHH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWG-JU-xwe">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="5ey-gZ-UYj"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -483,14 +479,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HHH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fww-Sd-LZN">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="pks-W0-wHJ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-71-q9R">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-71-q9R">
                                 <color key="backgroundColor" red="0.72959183670000005" green="0.48165391860000001" blue="0.2846599433" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="sjL-tN-hik"/>
@@ -677,7 +670,6 @@
                             <constraint firstItem="xkW-yp-h3O" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ckf-ZE-lgD"/>
                             <constraint firstItem="7ZU-33-Ppq" firstAttribute="baseline" secondItem="621-eB-84L" secondAttribute="baseline" type="default" id="Cut-3g-dao"/>
                             <constraint firstItem="hw7-hh-xHo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DId-f6-QbM"/>
-                            <constraint firstItem="Vdx-Rm-0ra" firstAttribute="top" secondItem="LUa-71-q9R" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="DSI-H2-837"/>
                             <constraint firstItem="Btx-0u-TPa" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DSV-bl-uBw"/>
                             <constraint firstItem="6rm-E6-5Oq" firstAttribute="baseline" secondItem="cp4-OM-o5R" secondAttribute="baseline" type="default" id="ESb-Mc-78c"/>
                             <constraint firstItem="EMa-4O-NJW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="EZX-QH-zKo"/>
@@ -698,7 +690,6 @@
                             <constraint firstItem="PXH-BA-wzN" firstAttribute="baseline" secondItem="dz0-aD-jdU" secondAttribute="baseline" type="default" id="JKD-yU-oEH"/>
                             <constraint firstItem="g6H-Pm-Vsl" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="JUG-9C-u2E"/>
                             <constraint firstItem="Wej-z4-pmH" firstAttribute="top" secondItem="xkW-yp-h3O" secondAttribute="top" type="default" id="JWh-pu-Mha"/>
-                            <constraint firstItem="Vdx-Rm-0ra" firstAttribute="top" secondItem="e8a-N2-FYU" secondAttribute="top" type="default" id="Jk4-v2-cXI"/>
                             <constraint firstItem="dz0-aD-jdU" firstAttribute="top" secondItem="dvc-nm-Rbx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="JvO-my-xRh"/>
                             <constraint firstItem="3hu-ro-Dce" firstAttribute="leading" secondItem="2fS-s1-dfc" secondAttribute="leading" type="default" id="KAH-cv-ugO"/>
                             <constraint firstItem="u6N-LX-caN" firstAttribute="top" secondItem="2xi-GQ-BFE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KK0-TS-7mC"/>
@@ -746,6 +737,7 @@
                             <constraint firstItem="PXH-BA-wzN" firstAttribute="top" secondItem="h43-ad-A0D" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ZyB-Nl-B4I"/>
                             <constraint firstItem="J6B-4t-3Td" firstAttribute="top" secondItem="0fM-Ns-PyO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aLA-rE-Ous"/>
                             <constraint firstItem="q3D-Hc-PKm" firstAttribute="top" secondItem="TFb-ZG-MO0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aM6-az-vKk"/>
+                            <constraint firstItem="rFi-GM-Yh2" firstAttribute="trailing" secondItem="BPv-V5-UGB" secondAttribute="trailing" type="default" id="agA-h4-yRd"/>
                             <constraint firstItem="vKX-pm-ixn" firstAttribute="top" secondItem="bI7-b8-6Gh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="axA-hc-C7q"/>
                             <constraint firstItem="TxG-h2-iRI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="b01-cY-5vf"/>
                             <constraint firstItem="gWG-JU-xwe" firstAttribute="baseline" secondItem="rnX-rC-YbU" secondAttribute="baseline" type="default" id="bRQ-OF-qsh"/>
@@ -773,9 +765,11 @@
                             <constraint firstItem="J6B-4t-3Td" firstAttribute="trailing" secondItem="0fM-Ns-PyO" secondAttribute="trailing" type="default" id="he9-nG-RPO"/>
                             <constraint firstItem="bI7-b8-6Gh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hwL-SY-8he"/>
                             <constraint firstItem="wxV-gR-zu9" firstAttribute="baseline" secondItem="TFb-ZG-MO0" secondAttribute="baseline" type="default" id="iCj-pf-8o4"/>
+                            <constraint firstItem="KVO-VE-Y45" firstAttribute="bottom" secondItem="hMh-sp-FCa" secondAttribute="bottom" type="default" id="iX5-j4-hV3"/>
                             <constraint firstItem="tEk-3M-Nsd" firstAttribute="top" secondItem="gcG-W4-J5K" secondAttribute="top" type="default" id="iZa-JG-e3v"/>
                             <constraint firstItem="u6N-LX-caN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="j5i-GR-DX6"/>
                             <constraint firstItem="dsu-cs-CUK" firstAttribute="leading" secondItem="3hu-ro-Dce" secondAttribute="leading" type="default" id="jWw-Gc-Gl4"/>
+                            <constraint firstItem="fww-Sd-LZN" firstAttribute="trailing" secondItem="Wej-z4-pmH" secondAttribute="trailing" type="default" id="jeS-0F-7zv"/>
                             <constraint firstItem="gcG-W4-J5K" firstAttribute="baseline" secondItem="tEk-3M-Nsd" secondAttribute="baseline" type="default" id="jp2-pd-uj9"/>
                             <constraint firstItem="cXP-hd-U7L" firstAttribute="leading" secondItem="Xv0-H1-sUF" secondAttribute="leading" type="default" id="jrp-Ve-Lfg"/>
                             <constraint firstItem="7ZU-33-Ppq" firstAttribute="trailing" secondItem="16P-d5-fJN" secondAttribute="trailing" type="default" id="kAM-Bd-WMM"/>
@@ -802,7 +796,9 @@
                             <constraint firstItem="xIW-AW-gaI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="pa9-jN-Mmf"/>
                             <constraint firstItem="dsu-cs-CUK" firstAttribute="baseline" secondItem="FcE-7f-0C9" secondAttribute="baseline" type="default" id="plb-Gb-14B"/>
                             <constraint firstItem="BGz-kL-B7e" firstAttribute="trailing" secondItem="q3D-Hc-PKm" secondAttribute="trailing" type="default" id="qC1-YS-NB7"/>
+                            <constraint firstItem="Vdx-Rm-0ra" firstAttribute="top" secondItem="rnX-rC-YbU" secondAttribute="top" type="default" id="qMP-Ys-88l"/>
                             <constraint firstItem="e8a-N2-FYU" firstAttribute="top" secondItem="hMh-sp-FCa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qQG-eb-wIW"/>
+                            <constraint firstAttribute="bottom" secondItem="e8a-N2-FYU" secondAttribute="bottom" constant="70" id="qha-5Q-FUn"/>
                             <constraint firstItem="2fS-s1-dfc" firstAttribute="baseline" secondItem="wxV-gR-zu9" secondAttribute="baseline" type="default" id="qlO-7h-A53"/>
                             <constraint firstItem="q3D-Hc-PKm" firstAttribute="leading" secondItem="tEk-3M-Nsd" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="qzN-lf-ffc"/>
                             <constraint firstItem="osV-fK-PRK" firstAttribute="leading" secondItem="rnX-rC-YbU" secondAttribute="leading" type="default" id="r8C-MW-Zjp"/>
@@ -832,6 +828,23 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="b1sLbl" destination="wxV-gR-zu9" id="UeW-fb-d2N"/>
+                        <outlet property="b2sLbl" destination="gcG-W4-J5K" id="UTy-f7-A7U"/>
+                        <outlet property="b3OfKLbl" destination="So8-l8-dZT" id="3E0-w7-asW"/>
+                        <outlet property="b3sLbl" destination="FcE-7f-0C9" id="dcr-wc-DYH"/>
+                        <outlet property="b4OfKLbl" destination="16P-d5-fJN" id="WHd-uR-T4p"/>
+                        <outlet property="b4sLbl" destination="0fM-Ns-PyO" id="WBA-LP-VHM"/>
+                        <outlet property="b5sLbl" destination="J6B-4t-3Td" id="GNF-4c-pR1"/>
+                        <outlet property="b6sLbl" destination="s40-Af-mEc" id="NhN-SQ-KKm"/>
+                        <outlet property="bBonusLbl" destination="V3i-cb-X9a" id="OAw-1P-Vd2"/>
+                        <outlet property="bChanceLbl" destination="rnX-rC-YbU" id="nrM-Zh-ltx"/>
+                        <outlet property="bFullHLbl" destination="7ZU-33-Ppq" id="CTZ-vb-5ys"/>
+                        <outlet property="bLTotalLbl" destination="BPv-V5-UGB" id="bDh-sP-G2P"/>
+                        <outlet property="bLgStrLbl" destination="dz0-aD-jdU" id="1Vo-bN-AvB"/>
+                        <outlet property="bSmStrLbl" destination="dvc-nm-Rbx" id="UVK-j5-F6X"/>
+                        <outlet property="bTotalLbl" destination="rFi-GM-Yh2" id="fne-N8-rh9"/>
+                        <outlet property="bUTotalLbl" destination="8s3-Zr-IJ2" id="eIx-9v-0sR"/>
+                        <outlet property="bYahtzeeLbl" destination="osV-fK-PRK" id="CPT-5W-tzx"/>
                         <outlet property="botSwitch" destination="ej9-a8-Iqr" id="Xn3-ES-1N5"/>
                         <outlet property="dice1Btn" destination="cws-gG-a35" id="ZVH-oo-8Cu"/>
                         <outlet property="dice2Btn" destination="SPu-Kn-mZX" id="5GT-Nm-Uqa"/>
@@ -857,6 +870,7 @@
                         <outlet property="hUTotalLbl" destination="cXP-hd-U7L" id="X1T-fW-pzD"/>
                         <outlet property="hYahtzeeLbl" destination="KVO-VE-Y45" id="A1J-Fy-oaA"/>
                         <outlet property="rollBtn" destination="LUa-71-q9R" id="t0U-0b-ISJ"/>
+                        <outlet property="statusLbl" destination="nnN-Z8-gw4" id="ht3-3v-e6H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -872,6 +886,80 @@
         <image name="Spots04.png" width="141" height="141"/>
         <image name="Spots05.png" width="141" height="141"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="botChanged:" candidateClass="UISwitch"/>
+                <relationship kind="action" name="dice1Clicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="dice2Clicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="dice3Clicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="dice4Clicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="dice5Clicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="gameClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="rollClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score1sClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score2sClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score3OfKClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score3sClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score4OfKClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score4sClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score5sClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="score6sClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="scoreChanceClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="scoreFullHClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="scoreLgStrClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="scoreSmStrClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="scoreYahtzeeClicked:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="b1sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="b2sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="b3OfKLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="b3sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="b4OfKLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="b4sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="b5sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="b6sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bBonusLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bChanceLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bFullHLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bLTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bLgStrLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bSmStrLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bUTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bYahtzeeLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="botSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="dice1Btn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dice2Btn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dice3Btn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dice4Btn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dice5Btn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="gameBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="h1sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h2sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h3OfKLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h3sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h4OfKLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h4sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h5sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="h6sLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hBonusLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hChanceLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hFullHLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hLTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hLgStrLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hSmStrLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hUTotalLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hYahtzeeLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rollBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="statusLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
